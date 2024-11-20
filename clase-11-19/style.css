@@ -5,11 +5,59 @@ body{
 }
 
 header{
-    background-color: #14213D;
+    background-color: #37323E;
     color: #FFFFFF;
     text-align: center;
 }
 
 footer{
-    background-color: #E5E5E5;
+    background-color: #d3d1d4;
+}
+
+.menu{
+    list-style: none;
+}
+
+.enlace{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.enlace:hover{
+    color: #DEB841;
+    text-decoration: underline;
+}
+
+.subtitulo{
+    color: #DE9E36;
+    font-size: 25px;
+}
+
+.boton-contacto{
+    background-color: #37323E;
+    width: 120PX;
+    height: 50px;
+    font-weight: bold;
+    border: none;
+    border-radius: 120px;
+    color: #FFFFFF;
+}
+
+.boton-contacto:hover{
+    background-color: #6D6A75;
+}
+
+.boton-contacto:active{
+    background-color: #BFBDC1;
+    color: #000;
+}
+
+.contacto div{
+    text-align: center;
+}
+
+#titulo-principal{
+    text-transform: uppercase;
+    text-decoration: underline;
 }
