@@ -1,0 +1,15 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
+    background-color: #FFFFFF;
+}
+
+header{
+    background-color: #14213D;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer{
+    background-color: #E5E5E5;
+}
