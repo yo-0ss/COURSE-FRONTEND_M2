@@ -1,24 +1,58 @@
-/* Reset básico */
-*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #424242;
-    background-color: #eeeeee;
+:root {
+  --color-primario: #e614c3;
+  --color-secundario: #a82c94;
+  --color-background: #f3f3f3;
+  --color-texto: #424242;
 }
 
-header  h1{
-    color: #e614c3;
+* {
+  box-sizing: border-box;
 }
 
-h1{
-    color: blueviolet;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--color-texto);
+  background-color: var(--color-background);
 }
 
-.author{
-    font-weight: bold;
-    color: #e614c3;
+header h1 {
+  color: var(--color-primario);
+}
+
+h1 {
+  color: blueviolet;
+}
+
+.author {
+  font-weight: bold;
+  color: var(--color-secundario);
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--color-secundario);
+}
+
+.lista-tareas {
+  list-style: none;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.lista-tareas li {
+  margin-bottom: 15px;
+}
+
+.tarea-checkbox {
+  margin-right: 10px;
+  accent-color: var(--color-primario);
+  cursor: pointer;
+}
+
+.tarea-checkbox:checked + .tarea-descripcion {
+  text-decoration: line-through;
+  font-style: italic;
+  color: var(--color-secundario);
 }
