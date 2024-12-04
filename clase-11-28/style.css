@@ -1,3 +1,37 @@
+:root{
+    --claro-color-primario: #f0f8ff;
+    --claro-color-secundario: #dae8f5;
+    --claro-texto-primario: #191970;
+    --claro-texto-secundario: #6495ed;
+    --claro-color-hover: #c0d8ee;
+    --claro-color-tarjeta: #4b70b6;
+
+    --oscuro-color-primario: #083155;
+    --oscuro-color-secundario: #0358a8;
+    --oscuro-texto-primario: #bbcef8;
+    --oscuro-texto-secundario: #d1deff;
+    --oscuro-color-hover: #386896;
+    --oscuro-color-tarjeta: #9cb7e9;
+}
+
+body.tema-claro{
+    --color-primario: var(--claro-color-primario);
+    --color-secundario:var(--claro-color-secundario);
+    --texto-primario:var(--claro-texto-primario);
+    --texto-secundario:var(--claro-texto-secundario);
+    --color-hover:var(--claro-color-hover);
+    --color-tarjeta:var(--claro-color-tarjeta);
+}
+
+body.tema-oscuro{
+    --color-primario: var(--oscuro-color-primario);
+    --color-secundario:var(--oscuro-color-secundario);
+    --texto-primario:var(--oscuro-texto-primario);
+    --texto-secundario:var(--oscuro-texto-secundario);
+    --color-hover:var(--oscuro-color-hover);
+    --color-tarjeta:var(--oscuro-color-tarjeta);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,8 +40,8 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:#f0f8ff;
-    color: midnightblue;
+    background-color:var(--color-primario);
+    color: var(--texto-primario);
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -24,21 +58,83 @@ footer{
 
 .navbar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
     padding: 10px 20px;
-    background-color: #dae8f5;
+    background-color: var(--color-secundario);
     border-radius: 16px;
 }
 
 .nav-link, .boton-tema{
     text-decoration: none;
-    color: midnightblue;
+    color: var(--texto-primario);
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s;
 }
 
 .nav-link:hover, .boton-tema:hover{
-    color:cornflowerblue;
+    color: var(--texto-secundario);
+}
+
+/* CARTAS */
+
+.seccion-tarjetas{
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 500px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.card{
+    background-color: var(--color-secundario);
+    color: var(--color-tarjeta);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+.card:hover{
+    transform: scale(1.05);
+    background-color: var(--color-hover);
+}
+.carta-especial{
+    flex-grow: 2;
+}
+.carta-hover:hover{
+    transform: rotate(2deg) scale(1.25);
+} 
+.card:nth-child(1){
+    align-self: flex-end;
+}
+.card:nth-child(3){
+    order: -1;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    margin: auto;
+}
+
+button{
+    background-color: var(--color-secundario);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--color-hover)#c0d8ee;
 }

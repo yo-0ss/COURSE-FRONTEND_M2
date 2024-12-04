@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Clase 11-28</title>
 </head>
-<body>
+<body class="tema-oscuro">
     <header>
         <h1>Practica de Flexbox</h1>
         <nav aria-label="Mapa de navegacion de la pagina">
@@ -15,13 +15,48 @@
                 <li><a class="nav-link" href="#tarjetas">Tarjetas</a></li>
                 <li><a class="nav-link" href="#formulario">Formulario</a></li>
                 <li>
-                    <button class="boton-tema" aria-label="Cambiar tema">🌓</button>
+                    <button class="boton-tema" aria-label="Cambiar tema" id="boton-tema">🌓</button>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
+        <section class="seccion-tarjetas">
+            <h2 id="tarjetas">Tarjetas con Flexbox</h2>
+            <div class="contenedor-tarjetas">
+                <article class="card">
+                    <h3>Tarjeta 1</h3>
+                    <p>Esta tarjeta usa <code>alig-self: flex-end</code> para moverse hacia abajo.</p>
+                </article>
+                <article class="card carta-especial">
+                    <h3>Tarjeta 2</h3>
+                    <p>Esta tarjeta usa <code>flex-grow: 2</code> para ocupar más espacio proporcionalmente.</p>
+                </article>
+                <article class="card">
+                    <h3>Tarjeta 3</h3>
+                    <p>Esta tarjeta usa <code>order: -1</code> para aparecer antes en el flujo visual.</p>
+                </article>
+                <article class="card carta-hover">
+                    <h3>Tarjeta 4</h3>
+                    <p>Pasa el cursor sobre esta tarjeta para ver una animación divertida.</p>
+                </article>
+            </div>
+        </section>
+        <section>
+            <h2 id="formulario">Formulario con Flexbox</h2>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text">
 
+                <label for="email">E-mail</label>
+                <input type="email">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Yosselin Ríos. Todos los derechos reservados.</p>
