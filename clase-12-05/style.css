@@ -1,0 +1,106 @@
+:root{
+    --color-background: #fadde1;
+    --color-texto: #474747;
+    --color-principal: #ffc4d6;
+    --color-secundario: #ff5d8f;
+    --color-blanco: #fff;
+    --color-sombra: rgba(0, 0, 0, 0.3);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--color-background);
+    line-height: 1.5;
+    color: var(--color-texto);
+}
+header{
+    padding: 20px 0;
+    background-color: var(--color-principal);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--color-texto);
+}
+.nav-menu{
+    font-weight: bold;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: var(--color-texto);
+}
+.nav-menu a:hover{
+    color: var(--color-secundario);
+}
+
+.contenedor-cartas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.carta{
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.contenedor-imagen{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.sombra{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-sombra);
+    color: var(--color-blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.sombra:hover{
+    opacity: 1;
+}
+.contenedor-imagen img{
+    border-radius: 10px;
+}
+.carta-informacion{
+    padding: 0 20px;
+}
+.carta-acciones span:hover{
+    color: var(--color-secundario);
+    transition: color 0.3s;
+}
+
+footer{
+    padding: 10px 0;
+    text-align: center;
+    background-color: var(--color-principal);
+    color: var(--color-texto);
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
