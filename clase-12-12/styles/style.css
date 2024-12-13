@@ -1,0 +1,36 @@
+:root{
+    --color-texto: #0a0908;
+    --color-background: #eae0d5;
+    --color-principal: #22333b;
+    --color-blanco: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: var(--color-texto);
+    background-color: var(--color-background);
+}
+header{
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 1.5rem 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.logo{
+    font-size: 2rem;
+}
+main{
+    padding: 1.5rem;
+}
+footer{
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
