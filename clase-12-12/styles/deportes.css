@@ -1,0 +1,57 @@
+:root {
+    --deportes-primary-color: #ac3d3f;
+    --deportes-bg-light: #f4faff;
+    --deportes-border-color: #ddd;
+    --deportes-text-color: #333;
+}
+/* Estilos específicos para la sección de deportes */
+.deportes {
+    background-color: var(--deportes-bg-light);
+    color: var(--deportes-text-color);
+    background: var(--deportes-primary-color);
+    color: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+}
+.deportes h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.deportes  p {
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+.deportes  ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+.deportes  ul li {
+    background: #fff;
+    color: var(--deportes-text-color);
+    padding: 1rem;
+    border: 1px solid var(--deportes-border-color);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.deportes  img {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 100%;
+    border-radius: 12px;
+}
+@media screen and (max-width: 600px) {
+    .deportes  {
+        padding: 1.5rem;
+    }
+    .deportes h2 {
+        font-size: 1.5rem;
+    }
+}
